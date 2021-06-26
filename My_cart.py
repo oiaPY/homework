@@ -40,7 +40,7 @@ if Cart_Claim == 'y':
 else:
     Cart_decision = input("请选择添加还是删除商品（add or del）：")
 # 结算仍有需要添加的商品，返回添加
-    if
+
     while Cart_Claim == 'n' and Cart_decision == 'add':
         Cart_Flag = True
         Cart = input("请添加你需要的商品编号(若已完成添加请输入0)：")
