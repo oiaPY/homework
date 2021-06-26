@@ -21,23 +21,23 @@ f.close()
 
 # 执行for循环，三次退出，提示用户账号密码锁定
 for i in range(3):
-    #   input获取用户输入
+    #input获取用户输入
     input_name = input("请输入你的用户名：")
     input_passwd = input("请输入你的密码：")
     # print(type(input_name))
     # print(type(input_passwd))
     # print(input_name)
     # print(input_passwd)
-# 判定用户名和密码是否和用户信息文件中的一致（一致输出欢迎信息；不一致提示用户名或密码错误）
+    #判定用户名和密码是否和用户信息文件中的一致（一致输出欢迎信息；不一致提示用户名或密码错误）
     if (name == input_name) and (passwd == input_passwd):
         print("欢迎进入系统！！")
         break
     else:
         if i == 2:
-            # 循环结束提示用户账号被锁定
+    # 循环结束提示用户账号被锁定
             print("你的账户已被锁定，请稍后再试！")
         else:
-            # 3次机会（循环还在），提示密码错误
+    # 3次机会（循环还在），提示密码错误
             print("你输入的用户名或密码错误！")
 
 
